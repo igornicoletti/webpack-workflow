@@ -1,0 +1,37 @@
+﻿// @include inTxtOverflow();
+@mixin inTxtOverflow() {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// @include inContainer();
+@mixin inContainer($width:100%, $height:100%, $margin:0 auto, $maxWidth:0) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  max-width: $maxWidth;
+}
+
+// @include inFont();
+@mixin inFont($color:inherit, $size:1rem, $weight:normal, $height:1rem, $spacing:0, $transform:none) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  font-family: $family;
+  letter-spacing: $spacing;
+  text-transform: $transform;
+}
+
+// @include inDisplayGrid();
+@mixin inDisplayGrid($gap:0, $display:grid, $text:left, $align:initial, $justify:initial, $rows:auto, $columns:1fr) {
+  gap: $gap;
+  display: $display;
+  text-align: $text;
+  align-items: $align;
+  justify-content: $justify;
+  grid-template-rows: $rows;
+  grid-template-columns: $columns;
+}

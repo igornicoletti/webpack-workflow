@@ -1,0 +1,13 @@
+html, body {
+	width: 100%;
+	font-size: 16px;
+	font-weight: 300;
+	min-height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+	font-family: 'Open Sans', sans-serif;
+	@include wide-xl { font-size: 14px; }
+	@include wide-lg { font-size: 12px; }
+	@include wide-md { font-size: 11px; }
+	@include wide-sm { font-size: 10px; }
+}
