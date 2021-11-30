@@ -1,8 +1,8 @@
 ﻿// @include inTxtOverflow();
-@mixin inTxtOverflow() {
+@mixin inTxtOverflow($height:auto) {
   width: 100%;
+  height: $height;
   overflow: hidden;
-  white-space: nowrap;
   text-overflow: ellipsis;
 }
 
@@ -15,11 +15,11 @@
 }
 
 // @include inFont();
-@mixin inFont($color:inherit, $size:1rem, $weight:normal, $height:1rem, $spacing:0, $transform:none) {
+@mixin inFont($color:inherit, $size:1rem, $height:1rem, $family:'InterRegular400', $spacing:0, $transform:none) {
   color: $color;
   font-size: $size;
-  font-weight: $weight;
   line-height: $height;
+  font-family: $family;
   letter-spacing: $spacing;
   text-transform: $transform;
 }

@@ -1,48 +1,48 @@
-// MEDIA QUERIES 
+/* Meidas Queries */
 
-/* 1600px; */
+//1680px;
 @mixin wide-xl {
   @media (max-width: #{$wide-xl}) {
     @content;
   }
 }
 
-/* 1400px; */
+//1440px;
 @mixin wide-lg {
   @media (max-width: #{$wide-lg}) {
     @content;
   }
 }
 
-/* 1200px; */
+//1220px;
 @mixin wide-md {
   @media (max-width: #{$wide-md}) {
     @content;
   }
 }
 
-/* 1024px; */
+//1024px;
 @mixin wide-sm {
   @media (max-width: #{$wide-sm}) {
     @content;
   }
 }
 
-/* 992px; */
+//992px;
 @mixin desktop {
   @media (max-width: #{$desktop}) {
     @content;
   }
 }
 
-/* 768px; */
+//768px;
 @mixin tablet {
   @media (max-width: #{$tablet}) {
     @content;
   }
 }
 
-/* 576px; */
+//576px;
 @mixin mobile {
   @media (max-width: #{$mobile}) {
     @content;

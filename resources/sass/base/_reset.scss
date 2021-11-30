@@ -5,32 +5,45 @@
 	outline: inherit;
 	list-style: none;
 	text-decoration: none;
-	box-sizing: border-box; 
+	box-sizing: border-box;
 }
 
-hr { 
-  border-top: inherit; 
+hr {
+	border-top: inherit;
 }
 
-p, ul { 
-  margin: 0; 
-  padding: 0; 
-} 
+p,
+ul {
+	margin: 0;
+	padding: 0;
+}
 
 a {
 	color: inherit;
 	cursor: pointer;
 	text-decoration: none;
-	&:hover, &:visited { color: inherit; }
-	&:focus, &:active {	outline: inherit; }
+
+	&:hover,
+	&:visited {
+		color: inherit;
+	}
+
+	&:focus,
+	&:active {
+		outline: inherit;
+	}
 }
 
 i:hover {
 	cursor: pointer;
-	transition: .25s ease-in; 
+	transition: .25s ease-in;
 }
 
 button {
 	cursor: pointer;
-	&:focus { outline: inherit; }
+	font-family: 'Open Sans', sans-serif;
+
+	&:focus {
+		outline: inherit;
+	}
 }
