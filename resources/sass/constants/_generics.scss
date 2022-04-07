@@ -1,31 +1,37 @@
-﻿// @include inTxtOverflow();
-@mixin inTxtOverflow($height:auto) {
+﻿/* @include inTxtOverflow(); */
+@mixin inTxtOverflow($height: auto) {
   width: 100%;
   height: $height;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-// @include inContainer();
-@mixin inContainer($width:100%, $height:100%, $margin:0 auto, $maxWidth:0) {
+/* @include inContainer(); */
+@mixin inContainer($width: 100%, $height: 100%, $margin: 0 auto, $maxWidth: 0) {
   width: $width;
   height: $height;
   margin: $margin;
   max-width: $maxWidth;
 }
 
-// @include inFont();
-@mixin inFont($color:inherit, $size:1rem, $height:1rem, $family:'InterRegular400', $spacing:0, $transform:none) {
-  color: $color;
-  font-size: $size;
-  line-height: $height;
-  font-family: $family;
-  letter-spacing: $spacing;
-  text-transform: $transform;
+/* @include inDisplayFlex(); */
+@mixin inDisplayFlex($display: flex, $text: left, $align: initial, $justify: initial) {
+  display: $display;
+  text-align: $text;
+  align-items: $align;
+  justify-content: $justify;
 }
 
-// @include inDisplayGrid();
-@mixin inDisplayGrid($gap:0, $display:grid, $text:left, $align:initial, $justify:initial, $rows:auto, $columns:1fr) {
+/* @include inDisplayGrid(); */
+@mixin inDisplayGrid(
+  $gap: 0,
+  $display: grid,
+  $text: left,
+  $align: initial,
+  $justify: initial,
+  $rows: auto,
+  $columns: 1fr
+) {
   gap: $gap;
   display: $display;
   text-align: $text;
@@ -33,4 +39,23 @@
   justify-content: $justify;
   grid-template-rows: $rows;
   grid-template-columns: $columns;
+}
+
+/* @include inFont(); */
+@mixin inFont(
+  $color: inherit,
+  $size: 1rem,
+  $weight: 400,
+  $height: 1rem,
+  $family: "Open Sans",
+  $spacing: 0,
+  $transform: none
+) {
+  color: $color;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  font-family: $family;
+  letter-spacing: $spacing;
+  text-transform: $transform;
 }

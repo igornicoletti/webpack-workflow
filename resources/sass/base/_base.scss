@@ -1,21 +1,20 @@
-html,
+html {
+	@media (max-width: 1080px) {
+		font-size: 93.75%;
+	}
+	@media (max-width: 720px) {
+		font-size: 87.5%;
+	}
+}
+
 body {
 	width: 100%;
-	font-size: 14px;
+	font-size: 16px;
+	font-weight: 400;
 	min-height: 100vh;
 	position: relative;
 	overflow-x: hidden;
-	font-family: 'Open Sans', sans-serif;
-
-	@include wide-xl {
-		font-size: 12px;
-	}
-
-	@include wide-sm {
-		font-size: 10px;
-	}
-
-	@include mobile {
-		font-size: 14px;
-	}
+	background-color: white;
+	-webkit-font-smoothing: antialiased;
+	font-family: "Open Sans", sans-serif;
 }

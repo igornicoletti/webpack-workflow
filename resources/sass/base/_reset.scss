@@ -18,18 +18,29 @@ ul {
 	padding: 0;
 }
 
+input,
+button,
+textarea {
+	font-weight: 400;
+	font-family: "Open Sans", sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+h6,
+strong {
 	margin: 0;
+	font-weight: 600;
 }
 
 a {
 	color: inherit;
 	cursor: pointer;
 	text-decoration: none;
+	box-sizing: border-box;
 
 	&:hover,
 	&:visited {
@@ -44,14 +55,22 @@ a {
 
 i:hover {
 	cursor: pointer;
-	transition: .25s ease-in;
+	transition: 0.25s ease-in;
 }
 
 button {
 	cursor: pointer;
-	font-family: 'Open Sans', sans-serif;
 
 	&:focus {
 		outline: inherit;
 	}
+
+	&:disabled {
+		opacity: 0.75;
+		cursor: not-allowed;
+	}
+}
+
+input:-webkit-autofill {
+	-webkit-box-shadow: 0 0 0 50px white inset;
 }
