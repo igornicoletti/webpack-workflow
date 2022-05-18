@@ -1,7 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Poppins-Regular";
+  src: url(../fonts/Poppins/Poppins-Regular.woff2) format("woff2");
+}
 
-/* @font-face {
-  font-weight: 400;
-  font-family: 'Open Sans';
-  src: url(../fonts/OpenSans.otf)format("opentype");
-} */
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  font-family: "Nunito-Regular";
+  src: url(../fonts/Nunito/Nunito-Regular.woff2) format("woff2");
+}

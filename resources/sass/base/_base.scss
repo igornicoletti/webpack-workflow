@@ -1,20 +1,24 @@
 html {
-	@media (max-width: 1080px) {
-		font-size: 93.75%;
-	}
-	@media (max-width: 720px) {
-		font-size: 87.5%;
-	}
+	$primary: #ffffff;
+	$secundary: #1e1e23;
 }
 
+html,
 body {
 	width: 100%;
 	font-size: 16px;
-	font-weight: 400;
 	min-height: 100vh;
 	position: relative;
+	font-style: normal;
+	font-weight: normal;
 	overflow-x: hidden;
 	background-color: white;
+	font-family: "Nunito-Regular", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	font-family: "Open Sans", sans-serif;
+	@include xl {
+		font-size: 14px;
+	}
+	@include sm {
+		font-size: 12px;
+	}
 }

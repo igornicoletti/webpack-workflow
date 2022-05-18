@@ -21,8 +21,9 @@ ul {
 input,
 button,
 textarea {
+	font-size: 1rem;
 	font-weight: 400;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Nunito-Regular", sans-serif;
 }
 
 h1,
@@ -33,20 +34,20 @@ h5,
 h6,
 strong {
 	margin: 0;
-	font-weight: 600;
+	font-size: 1rem;
+	font-weight: normal;
 }
 
 a {
 	color: inherit;
 	cursor: pointer;
+	display: inline-block;
 	text-decoration: none;
 	box-sizing: border-box;
-
 	&:hover,
 	&:visited {
 		color: inherit;
 	}
-
 	&:focus,
 	&:active {
 		outline: inherit;
@@ -55,11 +56,9 @@ a {
 
 button {
 	cursor: pointer;
-
 	&:focus {
 		outline: inherit;
 	}
-
 	&:disabled {
 		opacity: 0.75;
 		cursor: not-allowed;
