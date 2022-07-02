@@ -1,19 +1,11 @@
-html {
-	$primary: #ffffff;
-	$secundary: #1e1e23;
-}
-
 html,
 body {
 	width: 100%;
 	font-size: 16px;
-	min-height: 100vh;
 	position: relative;
-	font-style: normal;
-	font-weight: normal;
 	overflow-x: hidden;
 	background-color: white;
-	font-family: "Nunito-Regular", sans-serif;
+	font-family: 'Arial', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	@include xl {
 		font-size: 14px;

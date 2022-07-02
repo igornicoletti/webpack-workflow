@@ -8,14 +8,49 @@
 	box-sizing: border-box;
 }
 
-hr {
-	border-top: inherit;
+::before,
+::after {
+	border-width: 0;
+	border-style: solid;
+	border-color: inherit;
 }
 
 p,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+pre,
+figure,
+blockquote {
+	margin: 0;
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+p,
+ol,
 ul {
 	margin: 0;
 	padding: 0;
+	list-style: none;
+}
+
+img,
+svg,
+video,
+audio,
+embed,
+canvas,
+object,
+iframe {
+	display: block;
+	vertical-align: middle;
 }
 
 input,
@@ -23,19 +58,18 @@ button,
 textarea {
 	font-size: 1rem;
 	font-weight: 400;
-	font-family: "Nunito-Regular", sans-serif;
+	font-family: 'Arial', sans-serif;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong {
-	margin: 0;
-	font-size: 1rem;
-	font-weight: normal;
+button {
+	cursor: pointer;
+	&:focus {
+		outline: inherit;
+	}
+	&:disabled {
+		opacity: 0.75;
+		cursor: not-allowed;
+	}
 }
 
 a {
@@ -51,17 +85,6 @@ a {
 	&:focus,
 	&:active {
 		outline: inherit;
-	}
-}
-
-button {
-	cursor: pointer;
-	&:focus {
-		outline: inherit;
-	}
-	&:disabled {
-		opacity: 0.75;
-		cursor: not-allowed;
 	}
 }
 
